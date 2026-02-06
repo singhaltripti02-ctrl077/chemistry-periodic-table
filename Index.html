@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Periodic Table</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <h1>👩‍🔬 Periodic 🧪 Table 👩‍🔬  </h1>
+  <input type="text" id="search" placeholder="Search by name or symbol" />
+</header>
+
+<div id="table" class="table"></div>
+
+<div id="popup" class="popup" onclick="closePopup(event)">
+  <div class="popup-content" onclick="event.stopPropagation()">
+    <span class="close" onclick="closePopup()">✖</span>
+    <h2 id="p-name"></h2>
+    <p><b>Symbol:</b> <span id="p-symbol"></span></p>
+    <p><b>Atomic Number:</b> <span id="p-number"></span></p>
+    <p><b>Category:</b> <span id="p-category"></span></p>
+    <p><b>Atomic Mass:</b> <span id="p-mass"></span></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
